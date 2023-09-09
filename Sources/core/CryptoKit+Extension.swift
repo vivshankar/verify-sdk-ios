@@ -152,6 +152,12 @@ extension RSA {
                     return Data(encoded).base64EncodedString()
                 }
             }
+            
+            public var rawKey: SecKey {
+                get {
+                    return self.key
+                }
+            }
         }
 
         /// An RSA private key used to create cryptographic signatures.
@@ -246,6 +252,12 @@ extension RSA {
                     var error: Unmanaged<CFError>? = nil
                     let representation = SecKeyCopyExternalRepresentation(self.key, &error)
                     return representation! as Data
+                }
+            }
+            
+            public var rawKey: SecKey {
+                get {
+                    return self.key
                 }
             }
         }

@@ -85,6 +85,11 @@ extension RSA {
                 }
             }
             
+            /// The representation of the key as  ``SecKey``.
+            public var keyRepresentation: SecKey {
+                return self.key
+            }
+            
             /// An X.509 certificate representation of the public key.
             ///
             /// - Remark: The encoding of the public key includes the ASN.1 SubjectPublicKeyInfo type.  This representation is typically compatible with external security frameworks such as Java, openSSL, PHP, Perl etc.
@@ -255,10 +260,9 @@ extension RSA {
                 }
             }
             
-            public var rawKey: SecKey {
-                get {
-                    return self.key
-                }
+            /// The representation of the key as  ``SecKey``.
+            public var keyRepresentation: SecKey {
+                return self.key
             }
         }
     }

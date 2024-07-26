@@ -8,7 +8,7 @@ import Core
 @testable import Authentication
 
 class TokenInfoTests: XCTestCase {
-    let urlBase = "https://sdk.verify.ibm.com/v1.0/endpoint/default/token"
+    let urlBase = "https://sdk.verify.ibm.com/oauth2/token"
     
     override func setUp() {
         super.setUp()

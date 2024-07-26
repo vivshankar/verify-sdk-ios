@@ -20,8 +20,8 @@ The Authentication sample app is an end-to-end mobile app which uses an OAuth an
 1. After opening the project in Xcode, change the **Team** selection under **Signing & Capabilities** in the **Target** list
 2. Connect your iOS mobile device or use the Xcode simulator
 3. Press ⌘R to run the project
-4. Enter your tenant **Authorize Endpoint** i.e `https://sdk.verify.ibm.com/v1.0/endpoint/default/authorize`
-5. Enter your tenant **Token Endpoint**  i.e `https://sdk.verify.ibm.com/v1.0/endpoint/default/token`
+4. Enter your tenant **Authorize Endpoint** i.e `https://sdk.verify.ibm.com/oauth2/authorize`
+5. Enter your tenant **Token Endpoint**  i.e `https://sdk.verify.ibm.com/oauth2/token`
 6. Enter the **Redirect Callback**  i.e `verifysdk://auth/callback`
 7. Enter the **Client ID** obtained from the tenant application configuration 
 8. Tap **Use PKCE** if you configured the tenant application to use Proof Key for Code Exchange verification

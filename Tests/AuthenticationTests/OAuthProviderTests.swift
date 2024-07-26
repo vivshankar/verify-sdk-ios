@@ -13,7 +13,7 @@ class OAuthProviderTest: XCTestCase {
     let clientSecret = ""
     let username = "testuser"
     let password = "Passw0rd"
-    let urlBase = "https://sdk.verify.ibm.com/v1.0/endpoint/default"
+    let urlBase = "https://sdk.verify.ibm.com/oauth2"
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

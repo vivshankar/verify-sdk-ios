@@ -107,7 +107,7 @@ class LoginViewController: UIViewController {
     
     private func login(url: String, clientId: String, username: String, password: String, completion: @escaping (Result<String, NetworkError>) -> Void) {
         
-        guard let url = URL(string: "\(url)/v1.0/endpoint/default/token") else {
+        guard let url = URL(string: "\(url)/oauth2/token") else {
             completion(.failure(.badURL))
             return
         }

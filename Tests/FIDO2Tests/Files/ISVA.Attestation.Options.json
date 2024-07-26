@@ -5,7 +5,7 @@
     },
     "user": {
         "id": "Hl2lr6ViSjyMWWFFByzcjA",
-        "name": "https://login.ibm.com/oidc/endpoint/default/2700033WG8",
+        "name": "https://login.ibm.com/oauth2/2700033WG8",
         "displayName": "craigaps@au1.ibm.com"
     },
     "timeout": 60000,
